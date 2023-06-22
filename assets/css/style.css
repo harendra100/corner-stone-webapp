@@ -1,0 +1,199 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #8ae0ec;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  position: fixed;
+  background-color: #181818;
+  color: #fff;
+  padding: 0px;
+  width: 100%;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* #mobile-nav {
+  display: none;
+} */
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #ff6363;
+  color: hwb(194 61% 0%);
+}
+
+section {
+  padding: 50px;
+  text-align: center;
+}
+
+#home {
+
+  background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),url("../images/cornerstone-banner.png") 100%/100% no-repeat;
+}
+
+h1,
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  
+}
+#portfolio{
+  background-color: #ffffff;
+}
+#portfolio h2{
+  color: #313131;
+ 
+  text-decoration-color: #181818;
+}
+
+
+p {
+  font-size: 23px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+ul li {
+  margin-right: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff6363;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: #ff4444;
+}
+
+/* Responsive Styles */
+
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+
+  #menu-icon {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  #mobile-nav.active {
+    display: block;
+    background-color: #333;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 999;
+  }
+
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
